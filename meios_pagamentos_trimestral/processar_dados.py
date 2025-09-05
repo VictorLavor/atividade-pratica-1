@@ -4,11 +4,9 @@ import requests
 BASE = "https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/MeiosdePagamentosTrimestral"
 
 select = (
-    "datatrimestre,valorPix,valorTED,valorTEC,valorCheque,valorBoleto,valorDOC,"
-    "valorCartaoCredito,valorCartaoDebito,valorCartaoPrePago,"
-    "quantidadePix,quantidadeTED,quantidadeTEC,quantidadeCheque,"
-    "quantidadeBoleto,quantidadeDOC,quantidadeCartaoCredito,"
-    "quantidadeCartaoDebito,quantidadeCartaoPrePago"
+    "datatrimestre,valorPix,valorTED,"
+    "quantidadePix,quantidadeTED,quantidadeCheque,"
+    "quantidadeBoleto"
 )
 
 rows, skip, top = [], 0, 100
